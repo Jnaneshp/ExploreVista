@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location Info App</title>
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <h1>Location Info Finder</h1>
+  
+  <div class="search-container">
+    <input type="text" id="locationInput" placeholder="Enter a location" />
+    <button onclick="getLocationInfo()">Search</button>
+  </div>
+  
+  <div class="result-container" id="resultContainer">
+    <h2 id="locationName"></h2>
+    <img id="locationImage" src="" alt="Location Image" />
+    <p id="locationInfo"></p>
+  </div>
+  
+  <script src="info.js"></script>
+</body>
+</html>

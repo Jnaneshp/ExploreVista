@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location & Crowd Level</title>
+    <link rel="stylesheet" href="crowd.css">
+</head>
+<body>
+    <h1>Find Location and Crowd Level</h1>
+
+    <div class="location-input">
+        <input type="text" id="location" placeholder="Enter a location">
+        <button onclick="displayLocation()">Search</button>
+    </div>
+
+    <!-- Map Section -->
+    <h3>Map of the Location</h3>
+    <div id="map"></div>
+
+    <!-- Crowd Level Section -->
+    <h3>Crowd Level</h3>
+    <div id="crowd-level"></div>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBe8RBm6BsBdHtTqbb2trPBdWN9GgEsEaI&callback=initMap" async defer></script>
+    
+    <script src="crowd.js"></script>
+</body>
+</html>
